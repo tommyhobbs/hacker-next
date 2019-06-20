@@ -1,9 +1,9 @@
-const swPrecachewepackPlugin = require('sw-precache-webpack-plugin');
+const swPrecachewebpackPlugin = require('sw-precache-webpack-plugin');
 
 module.exports = {
   webpack: config => {
     config.plugins.push(
-      new swPrecachewepackPlugin({
+      new swPrecachewebpackPlugin({
         minify: true,
         staticFileGlobsIgnorePatterns: [/\.next\//],
         runtimeCaching: [
